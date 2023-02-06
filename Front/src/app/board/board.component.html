@@ -1,0 +1,43 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="board" >
+  <section class="tool">
+    <label  class="title"> SHAPES </label>
+    <button class="btn1" (click)="circle()"><i class="fa fa-circle-o"> circle</i></button>
+    <button class="btn1" (click)="tri()"><i class="fa fa-paper-plane"> triangle</i></button>
+    <button class="btn1" (click)="square()"><i class="fa fa-square-o"> square</i></button>
+    <button class="btn1" (click)="rect()"><i class="fa fa-th-large"> rectangle</i></button>
+    <button class="btn1" (click)="elipse()"><i class="fa fa-comment-o"> elipse</i></button>
+    <button class="btn1" (click)="line()"><i class="fa fa-arrows-h"> line</i></button>
+  </section>
+  <section class="operations">
+    <label  class="title">   OPERATIONS </label>
+    <button class="btn2" (click)="delete()"><i class="fa fa-eraser"> eraser</i></button>
+    <button class="btn2"><i class="fa fa-rotate-left" aria-hidden="true" (click)="und()"> undo</i></button>
+    <button class="btn2"><i class="fa fa-rotate-right" aria-hidden="true" (click)="red()"> redo</i></button>
+    <button class="btn2"><i class="fa fa-refresh"(click)="clear()" > clear</i></button>
+    <label  class="title"> SAVE: </label>
+    <input [(ngModel)]="s" type="=text">
+    <button class="btn2"><i class="fa fa-save" (click)="save()"> save</i></button>
+    <label  class="title"> LOAD JSON: </label>
+    <input [(ngModel)]="jsonFile" type="=text">
+    <button class="btn2"><i class="fa fa-file" (click)="loadJ()" > load</i></button>
+    <label  class="title"> LOAD XML: </label>
+    <input [(ngModel)]="xmlFile" type="=text">
+    <button class="btn2"><i class="fa fa-file" (click)="loadX()" > load</i></button>
+  </section>
+  <section class="file">
+    Color Picker: <input type="color" id = "colorPicker" value="#000000">
+
+  </section>
+</div>
+<div class="cont" id="container">
+
+</div>
+
+</body>
+</html>

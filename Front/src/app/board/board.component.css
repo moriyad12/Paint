@@ -1,0 +1,73 @@
+body{
+  display: flex;
+
+}
+
+.btn1 {
+  background-color:#004369    ;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  width: 115px;
+  height: 40px;
+  margin-top: 5px;
+
+}
+
+.tool{
+  margin-top: 10px;
+}
+
+.btn1:hover {
+  background-color: rgb(65, 193, 225);
+}
+
+.btn2 {
+  background-color: #DB1F48  ;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  width: 115px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.btn2:hover {
+  background-color: #01949A;
+}
+
+.operations{
+  margin-top: 25px;
+}
+
+.cont{
+  display: flex;
+  border: 5px solid #4C5270 ;
+  height: 100%;
+  margin-left: 20px;
+  width: 100%;
+
+
+}
+
+.board{
+  border: 5px solid #01949A  ;
+  background-color: #E5DDC8  ;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 850px;
+  padding: 20px;
+
+}
+input{
+  width: 110px;
+}
+.file{
+  margin-top: 20px;
+}
